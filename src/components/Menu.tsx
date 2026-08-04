@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 
 export function Menu() {
-  const [active, setActive] = useState(MENU[0].id);
-  const cat = MENU.find((c) => c.id === active) ?? MENU[0];
+  const [active, setActive] = useState(MENU[0]!.id);
+  const cat = MENU.find((c) => c.id === active) ?? MENU[0]!;
+
 
   return (
     <section id="menu" className="grill-texture bg-charcoal py-24 lg:py-32">
