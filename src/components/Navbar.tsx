@@ -65,8 +65,8 @@ export function Navbar() {
           aria-expanded={open}
           className="shrink-0 rounded-md border border-border p-2 text-cream lg:hidden"
         >
-          {open ? <Menu className="h-5 w-5 hidden" /> : null}
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+
         </button>
       </nav>
 
